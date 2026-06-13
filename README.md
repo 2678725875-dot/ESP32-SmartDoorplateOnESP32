@@ -54,7 +54,7 @@ npm run dev
 
 ### 3. ESP32 固件
 
-1. 用 Arduino IDE 打开 `sketch_jun1a/sketch_jun1a.ino`
+1. 用 Arduino IDE 或其他支持ESP32开发板的代码编辑器打开 `sketch_jun1a/sketch_jun1a.ino`
 2. 修改 WiFi 配置和服务器地址
 3. 选择 ESP32 开发板，编译上传
 
@@ -68,10 +68,3 @@ npm run dev
 | DELETE | `/api/messages/:id` | 删除留言 |
 | GET | `/api/visitors` | 获取访客计数 |
 | POST | `/api/visitors` | 记录一次访客 |
-
-## ⚠️ 安全提醒
-
-- **不要将含 API Key / 密码的代码提交到公开仓库**
-- `server.js` 中的天气 API Key 请替换为环境变量
-- `sketch_jun1a.ino` 中的 WiFi 密码请使用占位符
-- `data.db` 已加入 `.gitignore`，不会被提交
